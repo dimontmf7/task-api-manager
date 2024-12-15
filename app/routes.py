@@ -115,6 +115,6 @@ class Login(Resource):
         access_token = create_access_token(identity=user.id)
         return {"access_token": access_token}, 200
 
-# Добавление пространств имен в API
+# Добавление имен в API
 api.add_namespace(tasks_ns, path='/tasks')
 api.add_namespace(auth_ns, path='/auth')
